@@ -1,0 +1,3 @@
+Serve para o conteudo se adequar melhor a qualquer tela
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,0 +1,11 @@
+<meta name="robots" content="noindex">
+
+impede a página de aparecer em resultados de buscadores
+
+<meta name="robots" content="nofollow">
+
+dizemso ao buscador para nao nos associar aos links da pagina
+
+se precisarmos usar os dois ao mesmo tempo basta separar por virgula
+
+<meta name="robots" content="noindex, nofollow">
