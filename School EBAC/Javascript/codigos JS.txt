@@ -22,6 +22,8 @@ typeof(parseInt(primeiroNumero))
 
 parseFloat - ponto flutuavel 1,1 / 1,2
 
+.length - Fala a quantidade de itens que tem no elemento ou tamanho
+
 
 
 
