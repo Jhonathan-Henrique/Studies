@@ -1,0 +1,1 @@
+Basta ir na configuração do navegador > privacidade e segurança > configurações do site > onde tem javascript clica em não permitir que use javascript

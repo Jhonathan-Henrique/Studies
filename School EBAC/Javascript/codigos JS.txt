@@ -1,0 +1,6 @@
+// - Para comentar o codigo.
+/**/ - Serve para comentar varias linhas.
+alert('ola mundo') - Para aparecer uma mensagem.
+console.log() - função que vai aparecer a msg apenas no console. ele serve para a gente fazer teste no nosso codigo.
+ por exemplo: console.log('Esse trexo do codigo funcionou')
+=================================================
