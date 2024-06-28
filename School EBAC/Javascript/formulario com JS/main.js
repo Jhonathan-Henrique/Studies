@@ -1,11 +1,11 @@
 const form = document.getElementById('form-deposito')
 
-function validaNome(nomeCompleto){
+function validaNome(nomeCompleto) {
     const nomeComoArray = nomeCompleto.split(' ')
     return nomeComoArray.length >= 2
 }
 
-form.addEventListener('submit', function(e){
+form.addEventListener('submit', function (e) {
     let formEValido = false;
     e.preventDefault()
 
@@ -13,16 +13,19 @@ form.addEventListener('submit', function(e){
     const nomeBeneficiario = document.getElementById('nomeBeneficiario')
     const numeroConta = document.getElementById('contaBeneficiario')
     const ValorDepositado = document.getElementById('valorDeposito')
-    const mensagemSucesso = `Montante de: ${ValorDepositado.value} Depositado com sucesso para Beneficiario: ${nomeBeneficiario.value}, Conta: ${numeroConta.value}`
+    const mensagemSucesso = `Montante de: <b>${ValorDepositado.value}</b> Depositado com sucesso para Beneficiario: <b>${nomeBeneficiario.value}</b>, Conta: <b>${numeroConta.value}</b>`
+
 
     formEValido = validaNome(nomeBeneficiario.value)
     if (formEValido) {
-        alert (mensagemSucesso)
+        const containerMensagem = document.querySelector('.mensagemSucesso')
+        containerMensagem.innerHTML = mensagemSucesso
+        containerMensagem.style.display = 'block'
 
         nomeBeneficiario.value = ''
-        numeroConta.value = '' 
+        numeroConta.value = ''
         ValorDepositado.value = ''
     } else {
-        alert ('O nome não está completo')
+        alert('O nome não está completo')
     }
 })
