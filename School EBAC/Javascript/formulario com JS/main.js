@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
     const numeroConta = document.getElementById('contaBeneficiario')
     const ValorDepositado = document.getElementById('valorDeposito')
     const mensagemSucesso = `Montante de: <b>${ValorDepositado.value}</b> Depositado com sucesso para Beneficiario: <b>${nomeBeneficiario.value}</b>, Conta: <b>${numeroConta.value}</b>`
-
+    const mensagemErro = `Operação não realizada, por favor digite o nome completo`
 
     formEValido = validaNome(nomeBeneficiario.value)
     if (formEValido) {
@@ -26,6 +26,12 @@ form.addEventListener('submit', function (e) {
         numeroConta.value = ''
         ValorDepositado.value = ''
     } else {
-        alert('O nome não está completo')
+        const mensagemDeErro = document.querySelector('.mensagemError')
+        mensagemDeErro.innerHTML = mensagemErro
+        mensagemDeErro.style.display = 'block'
+
+        nomeBeneficiario.value = ''
+        numeroConta.value = ''
+        ValorDepositado.value = ''
     }
 })

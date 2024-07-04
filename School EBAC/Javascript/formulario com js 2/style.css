@@ -1,7 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -9,43 +9,44 @@
     flex-direction: column;
     max-width: 1366px;
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
 }
 
 form input {
-    padding: 15px;
+    padding: 10px;
 }
 
 button {
-    background-color: rgb(125, 194, 125);
     color: white;
+    background-color: rgb(93, 177, 93);
+    font-size: 20px;
     font-weight: bold;
-    font-size: 20px;
-    padding: 15px;
-    cursor: pointer;
+    padding: 20px;
 }
 
-.mensagemSucesso {
-    background-color: rgb(125, 194, 125);   
-    padding: 25px;
+.mensagem-sucesso {
+    background-color: rgb(93, 177, 93);
     color: white;
     font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
     display: none;
 }
 
-.mensagemError {
-    background-color: rgb(223, 49, 26);   
+.mensagem-error {
+    color: red;
     padding: 10px;
-    color: white;
     font-size: 20px;
     display: none;
 }
+
