@@ -21,6 +21,9 @@ form.addEventListener('submit', function(e){
         error.innerHTML = mensagemError
         error.style.display = 'block'
 
+        nomeBeneficiario.value = ' '
+        
+
     }   else {
     
         let sucess = document.querySelector('.mensagem-sucesso')
